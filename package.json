@@ -2,14 +2,18 @@
   "name": "arkade-arkana-vtt-be",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/app.ts",
+    "test": "vitest"
   },
   "dependencies": {
     "@hono/node-server": "^1.14.0",
-    "hono": "^4.7.5"
+    "@hono/zod-validator": "^0.4.3",
+    "hono": "^4.7.5",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
-    "tsx": "^4.7.1"
+    "tsx": "^4.7.1",
+    "vitest": "^3.0.9"
   }
 }
